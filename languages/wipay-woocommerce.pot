@@ -1,0 +1,260 @@
+# Copyright (C) 2024 WiPay Caribbean
+# This file is distributed under the same license as the WiPay WooCommerce package.
+# WiPay Caribbean <support@wipaycaribbean.com>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WiPay WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wipaycaribbean.com\n"
+"POT-Creation-Date: 2024-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: WP-CLI 2.x\n"
+"X-Domain: wipay-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "WiPay WooCommerce Payment Gateway"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wipaycaribbean.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Accept credit card payments across the Caribbean via WiPay's secure hosted checkout."
+msgstr ""
+
+#. Author of the plugin
+msgid "WiPay Caribbean"
+msgstr ""
+
+#: wipay-woocommerce.php
+msgid "WiPay WooCommerce requires WooCommerce to be installed and active."
+msgstr ""
+
+#: wipay-woocommerce.php
+#. translators: %s: minimum WooCommerce version
+msgid "WiPay WooCommerce requires WooCommerce %s or higher."
+msgstr ""
+
+#: wipay-woocommerce.php
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "WiPay Caribbean"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Accept credit card payments across the Caribbean via WiPay's secure hosted checkout."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Pay with Card (WiPay)"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "You will be redirected to WiPay's secure payment page to complete your purchase."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Enable / Disable"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Enable WiPay Caribbean payment gateway"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Payment method name shown to the customer at checkout."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Short description shown beneath the payment method title at checkout."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "WiPay Account Number"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Your WiPay merchant account number. Find this in your WiPay dashboard."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Environment"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Use Sandbox for testing. Switch to Live when ready to accept real payments."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Sandbox (testing)"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Live (production)"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Country"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Your WiPay-registered country. This determines which WiPay API endpoint is used."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Currency"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Currency code sent to WiPay (e.g. TTD, JMD, USD). Auto-set when you change the country above."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Fee Structure"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Decide who bears the WiPay processing fee."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Customer pays the fee"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Merchant absorbs the fee"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Debug Mode"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Enable logging (WooCommerce → Status → Logs → wipay-woocommerce)"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Logs payment requests and responses. Disable in production unless troubleshooting."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Sandbox mode is active."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "No real payments will be processed. Switch to Live when ready."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Order not found. Please try again."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Payment configuration error. Please contact the store owner."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Awaiting WiPay payment."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Order not found."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+#. translators: 1: WiPay transaction ID, 2: callback source (return/webhook)
+msgid "WiPay payment successful. Transaction ID: %1$s (via %2$s)."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Payment was not completed. Please try again or choose another payment method."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+#. translators: 1: Reason, 2: Transaction ID, 3: Source
+msgid "WiPay payment failed. Reason: %1$s. Transaction ID: %2$s (via %3$s)."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Unknown"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "N/A"
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "WiPay refunds must be processed manually through your WiPay merchant portal at wipaycaribbean.com. Please log in to your WiPay account to issue the refund."
+msgstr ""
+
+#: includes/class-wc-wipay-gateway.php
+msgid "Thank you for your order. Your payment has been received and is being processed by WiPay Caribbean."
+msgstr ""
+
+#: includes/class-wc-wipay-webhook.php
+#. translators: 1: Status, 2: Transaction ID
+msgid "WiPay webhook received. Status: %1$s. Transaction ID: %2$s."
+msgstr ""
+
+#: includes/class-wc-wipay-countries.php
+msgid "Trinidad & Tobago"
+msgstr ""
+
+#: includes/class-wc-wipay-countries.php
+msgid "Jamaica"
+msgstr ""
+
+#: includes/class-wc-wipay-countries.php
+msgid "Barbados"
+msgstr ""
+
+#: includes/class-wc-wipay-countries.php
+msgid "Saint Lucia"
+msgstr ""
+
+#: includes/class-wc-wipay-countries.php
+msgid "Grenada"
+msgstr ""
+
+#: includes/class-wc-wipay-countries.php
+msgid "Guyana"
+msgstr ""
+
+#: templates/payment-form.php
+msgid "Redirecting to WiPay…"
+msgstr ""
+
+#: templates/payment-form.php
+msgid "WiPay Caribbean"
+msgstr ""
+
+#: templates/payment-form.php
+msgid "You are being securely redirected to the WiPay payment page. Please do not close this window."
+msgstr ""
+
+#: templates/payment-form.php
+msgid "WiPay payment form"
+msgstr ""
+
+#: templates/payment-form.php
+msgid "Click here to pay"
+msgstr ""

@@ -1,0 +1,196 @@
+/**
+ * WiPay WooCommerce – Checkout Styles
+ *
+ * Covers:
+ *   - Payment method tile on the checkout page
+ *   - The redirect / loading page (payment-form.php)
+ *   - Accessible focus styles (WCAG 2.1 AA)
+ *   - Mobile-first, responsive layout
+ *
+ * Text domain: wipay-woocommerce
+ * Version:     2.0.0
+ */
+
+/* ==========================================================================
+   1. CSS Custom Properties
+   ========================================================================== */
+
+:root {
+	--wipay-blue:        #005baa;
+	--wipay-blue-dark:   #004a8a;
+	--wipay-blue-light:  #e8f1fb;
+	--wipay-green:       #2e7d32;
+	--wipay-red:         #c62828;
+	--wipay-text:        #1a1a2e;
+	--wipay-text-muted:  #555;
+	--wipay-border:      #dde3ec;
+	--wipay-radius:      6px;
+	--wipay-transition:  0.2s ease;
+}
+
+/* ==========================================================================
+   2. Payment method tile (checkout page)
+   ========================================================================== */
+
+.payment_method_wipay label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	font-weight: 500;
+	color: var(--wipay-text);
+}
+
+.payment_method_wipay .payment_box {
+	background: var(--wipay-blue-light);
+	border: 1px solid var(--wipay-border);
+	border-radius: var(--wipay-radius);
+	padding: 14px 16px;
+	margin-top: 8px;
+	font-size: 0.9rem;
+	color: var(--wipay-text-muted);
+	line-height: 1.5;
+}
+
+/* Gateway icon next to the label */
+.payment_method_wipay img.wipay-gateway-icon {
+	max-height: 28px;
+	width: auto;
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+   3. Sandbox notice banner
+   ========================================================================== */
+
+.wipay-sandbox-notice {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 14px;
+	background: #fff8e1;
+	border-left: 4px solid #f9a825;
+	border-radius: 0 var(--wipay-radius) var(--wipay-radius) 0;
+	margin-bottom: 12px;
+	font-size: 0.875rem;
+	color: #5d4037;
+}
+
+.wipay-sandbox-notice::before {
+	content: "⚠";
+	font-size: 1.1rem;
+	flex-shrink: 0;
+}
+
+/* ==========================================================================
+   4. Redirect / loading page  (payment-form.php)
+   ========================================================================== */
+
+.wipay-redirect-wrap {
+	text-align: center;
+	padding: 2.5rem 1.5rem;
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+.wipay-redirect-wrap img.wipay-logo {
+	max-width: 200px;
+	height: auto;
+	margin: 0 auto 1.75rem;
+	display: block;
+}
+
+.wipay-redirect-wrap h2 {
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: var(--wipay-text);
+	margin: 0 0 0.6rem;
+}
+
+.wipay-redirect-wrap p {
+	font-size: 0.95rem;
+	color: var(--wipay-text-muted);
+	max-width: 380px;
+	margin: 0 auto 1.75rem;
+	line-height: 1.6;
+}
+
+/* Animated spinner */
+.wipay-spinner {
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	border: 5px solid #dde3ec;
+	border-top-color: var(--wipay-blue);
+	border-radius: 50%;
+	animation: wipay-spin 0.75s linear infinite;
+	margin: 0 auto 1.5rem;
+}
+
+@keyframes wipay-spin {
+	to { transform: rotate(360deg); }
+}
+
+/* Fallback manual submit button (shown when JS is disabled) */
+.wipay-manual-submit {
+	display: inline-block;
+	padding: 0.65rem 1.6rem;
+	background: var(--wipay-blue);
+	color: #fff;
+	border: none;
+	border-radius: var(--wipay-radius);
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background var(--wipay-transition);
+}
+
+.wipay-manual-submit:hover,
+.wipay-manual-submit:focus {
+	background: var(--wipay-blue-dark);
+	outline: 3px solid var(--wipay-blue-light);
+	outline-offset: 2px;
+}
+
+/* ==========================================================================
+   5. Order-received / thank-you page
+   ========================================================================== */
+
+.wipay-thank-you-notice {
+	border-left: 4px solid var(--wipay-green);
+	background: #f1f8f1;
+	padding: 12px 16px;
+	border-radius: 0 var(--wipay-radius) var(--wipay-radius) 0;
+	margin-top: 12px;
+	font-size: 0.9rem;
+	color: var(--wipay-green);
+}
+
+/* ==========================================================================
+   6. Accessibility – focus ring
+   ========================================================================== */
+
+.wipay-manual-submit:focus-visible {
+	outline: 3px solid var(--wipay-blue);
+	outline-offset: 3px;
+}
+
+/* ==========================================================================
+   7. Responsive
+   ========================================================================== */
+
+@media (max-width: 480px) {
+	.wipay-redirect-wrap {
+		padding: 1.5rem 1rem;
+	}
+
+	.wipay-redirect-wrap h2 {
+		font-size: 1.2rem;
+	}
+
+	.wipay-spinner {
+		width: 40px;
+		height: 40px;
+	}
+}
